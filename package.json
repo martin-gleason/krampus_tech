@@ -1,0 +1,27 @@
+{
+  "name": "krampus_tech",
+  "version": "1.0.0",
+  "description": "Node, Express, and Claude",
+  "keywords": [
+    "ai",
+    "static"
+  ],
+  "homepage": "https://github.com/martin-gleason/krampus_tech#readme",
+  "bugs": {
+    "url": "https://github.com/martin-gleason/krampus_tech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-gleason/krampus_tech.git"
+  },
+  "license": "ISC",
+  "author": "marty gleason",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
