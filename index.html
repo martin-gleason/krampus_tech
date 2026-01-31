@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
     <title>Krampus Tech</title>
 </head>
 <body>
     <h1>Get Fucked, Pacelt!</h1>
     <figure>
-        <img src="img/krampus.jpg" alt="Krampus and Child. The child is Joe." width="50%" title="Krampus and Joe, circa 1977">
+        <img src="/public/img/krampus.jpg" alt="Krampus and Child. The child is Joe." width="50%" title="Krampus and Joe, circa 1977">
         <figcaption>
             <a href=https://www.publicdomainpictures.net/en/view-image.php?image=532790&picture=krampus-and-child-illustration>Source</a>
         </figcaption>
     </figure>
-    <form action="" method="get" class="krampus-question">
+    <form action="/ask" method="post" class="krampus-question">
         <label>Ask your question</label>
-        <input type="text" id="question-id"/>
+        <input type="text" id="question-id" name="question"/>
         <input type="submit" value="Ask!" />
     </form>
 </body>
