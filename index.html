@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href ="/public/css/styles.css" />
+    <script src="/public/js/main.js" defer></script>
     <title>Krampus Tech</title>
 </head>
 <body>
     <h1>Get Fucked, Pacelt!</h1>
-    <figure>
-        <img src="/public/img/krampus.jpg" alt="Krampus and Child. The child is Joe." width="50%" title="Krampus and Joe, circa 1977">
-        <figcaption>
-            <a href=https://www.publicdomainpictures.net/en/view-image.php?image=532790&picture=krampus-and-child-illustration>Source</a>
-        </figcaption>
-    </figure>
-    <form action="/ask" method="post" class="krampus-question">
+    <div id="krampus-image" name="krampus-image">
+        <figure>
+            <img id="joe-and-krampus" src="/public/img/krampus.jpg" alt="Krampus and Child. The child is Joe." width="50%" title="Krampus and Joe, circa 1977">
+            <figcaption>
+                <a href=https://www.publicdomainpictures.net/en/view-image.php?image=532790&picture=krampus-and-child-illustration>Source</a>
+            </figcaption>
+        </figure>
+    </div>
+    <form id="krampus-question" action="/ask" method="post" class="krampus-question">
         <label>Ask your question</label>
         <input type="text" id="question-id" name="question"/>
-        <input type="submit" value="Ask!" />
     </form>
+    <button form="krampus-question" id="ask-krampus" onClick="askKrampus()">Ask</button>
+    <div id="answer-block" name="krampus-answer">
+        <p id="answer"></p>
+    </div>
 </body>
 </html>
