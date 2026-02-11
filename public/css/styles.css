@@ -35,3 +35,18 @@ label{
 .spinning {
     animation: spin-and-vanish 1s ease-in-out forwards;
 }
+
+@keyframes spin-and-return {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(1440deg);
+        opacity: 1;
+    }
+}
+
+.return {
+    animation: spin-and-return 1s ease-in forwards;
+}

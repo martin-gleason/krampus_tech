@@ -14,11 +14,10 @@ function askKrampus(event){
 
     const question = takeQuestion();
     const questionAsked = sanitizeQuesiton(question);
-    
 
     const answer = document.getElementById("answer");
     answer.textContent = questionAsked
-
+    resetImage();
 };
 
 function spinKrampus(){
@@ -38,5 +37,14 @@ function sanitizeQuesiton(question){
 }
 
 function postAnswer(questionAsked){
+    
+}
+
+function resetImage(){
+    const img = document.getElementById("joe-and-krampus");
+    setTimeout(() =>{
+        img.classList.remove('spinning');
+        img.classList.add('return');
+    }, 5000);
     
 }
